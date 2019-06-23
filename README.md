@@ -18,6 +18,8 @@ This script should NOT delete anything non-cPanel. Any databases or site files y
 # HOW TO RUN IT
 ```wget https://raw.githubusercontent.com/killcpanel/downcp/master/downcp.sh && chmod +x downcp.sh && sh downcp.sh```
 
+This can take quite some time to run, probably best to start in a screen.
+
 # REQUIREMENTS
 - CentOS/RHEL 7+
 - Some minimum version of cPanel (TBD, lets say 11.60+)
