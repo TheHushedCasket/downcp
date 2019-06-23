@@ -76,14 +76,13 @@ systemctl daemon-reload
 systemctl reset-failed
 
 # Reload bind and mysql/mariadb as they may get stopped in this process
-echo "Restarting MySQL/MariaDB and bind"
+echo "Restarting MySQL/MariaDB and bind..."
 systemctl restart named
 systemctl restart mysql
 
-# TO ADD - ADD PATH to /root/.bashrc - export PATH=$PATH:/bin:/usr/bin:/usr/sbin
-# FILES TO REPLACE:
-# /root/.bashrc
-# /root/.bash_profile
-# /etc/bashrc
-# /etc/profile
-#
+# Replace ~/.bashrc, ~/.bash_profile, /etc/bashrc and /etc/profile
+echo "Replacing bashrcs and profiles..."
+wget https://raw.githubusercontent.com/killcpanel/downcp/master/etcbashrc -O /etc/bashrc
+wget https://raw.githubusercontent.com/killcpanel/downcp/master/etcprofile -O /etc/profile
+wget https://raw.githubusercontent.com/killcpanel/downcp/master/bashrc -O ~/.bashrc
+wget https://raw.githubusercontent.com/killcpanel/downcp/master/bash_profile -O ~/.bash_profile
