@@ -71,7 +71,7 @@ rm -f /etc/systemd/system/cpanel_dovecot_solr.service
 rm -f /etc/systemd/system/cphulk.service
 
 # Reload systemd daemons and clear failed daemons
-echo "Reloading systemD..."
+echo "Reloading systemd..."
 systemctl daemon-reload
 systemctl reset-failed
 
