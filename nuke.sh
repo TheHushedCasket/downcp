@@ -4,6 +4,10 @@
 # Version 1.0
 # Last updated 6/23/2019
 
+# Some pregame notifications
+echo "Obtaining 24th chromosome..."
+sleep 10
+
 # First disable services and remove packages
 echo "Stopping cPanel..."
 systemctl stop cpanel
