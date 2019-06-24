@@ -52,7 +52,6 @@ echo "Nuking cPanel files...";
 chattr -a /usr/local/cpanel/logs/*
 cd /
 find . -type d -name "*cpanel*" -exec rm -rf {} +
-cd /
 find . -type f -name "*cpanel*" -exec rm -rf {} +
 
 # Remove the systemd service files
