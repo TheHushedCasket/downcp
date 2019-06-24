@@ -9,12 +9,10 @@ curl https://raw.githubusercontent.com/killcpanel/downcp/master/files/logo
 echo "Obtaining 24th chromosome..."
 sleep 10
 
-# First disable services and remove packages
+# First disable services
 echo "Stopping cPanel..."
-systemctl stop cpanel
-systemctl disable cpanel
-systemctl stop solr
-systemctl disable solr
+systemctl stop cpanel solr cphulkd cpanel_dovecot_solr cpanalyticsd spamd tailwatchd queueprocd
+systemctl disable cpanel solr cphulkd cpanel_dovecot_solr cpanalyticsd spamd tailwatchd queueprocd
 
 # Removing cPanel packages
 echo "Removing cPanel packages..."
@@ -62,7 +60,7 @@ rm -f /etc/systemd/system/tailwatchd.service
 rm -f /etc/systemd/system/spamd.service
 rm -f /etc/systemd/system/cpanalyticsd.service
 rm -f /etc/systemd/system/cpanel_dovecot_solr.service
-rm -f /etc/systemd/system/cphulk.service
+rm -f /etc/systemd/system/cphulkd.service
 
 # Also remove them from the different targets
 rm -f /etc/systemd/system/*/cp*
@@ -71,7 +69,7 @@ rm -f /etc/systemd/system/*/tailwatchd.service
 rm -f /etc/systemd/system/*/spamd.service
 rm -f /etc/systemd/system/cpanalyticsd.service
 rm -f /etc/systemd/system/cpanel_dovecot_solr.service
-rm -f /etc/systemd/system/cphulk.service
+rm -f /etc/systemd/system/cphulkd.service
 
 # Reload systemd daemons and clear failed daemons
 echo "Reloading systemd..."
