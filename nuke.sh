@@ -5,6 +5,7 @@
 # Last updated 6/23/2019
 
 # Some pregame notifications
+curl https://raw.githubusercontent.com/killcpanel/downcp/master/logo
 echo "Obtaining 24th chromosome..."
 sleep 10
 
