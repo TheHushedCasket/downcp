@@ -1,7 +1,8 @@
 # downcp
 The unofficial cPanel uninstall script 
-<center>
 <pre>
+<center>
+
           _.-^^---....,,--       
       _--                  --_  
      <     ____                >          __
@@ -17,8 +18,8 @@ The unofficial cPanel uninstall script
              -=#$%&%$#=-'   
                | ;  :|     
       _____.,-#%&$@%#&#~,._____
-</pre>
 </center>
+</pre>
 
 <h3 align="center">downcp</h3>
 
