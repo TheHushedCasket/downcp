@@ -19,7 +19,6 @@ systemctl disable solr
 echo "Removing cPanel packages..."
 yum -y remove *ea-*
 yum -y remove *cpanel*
-yum -y erase *cpanel*
 
 # Disable and remove cPanel repos
 echo "Removing cPanel repos..."
