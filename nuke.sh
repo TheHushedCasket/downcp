@@ -32,9 +32,9 @@ rm -f /etc/yum.repos.d/EA4.repo
 echo "Making sure yum isn't totally busted..."
 yum -y clean all
 yum -y install yum-utils
-package-cleanup --problems
-package-cleanup --dupes
-package-cleanup --cleandupes --removenewestdupes
+package-cleanup -y --problems
+package-cleanup -y --dupes
+package-cleanup -y --cleandupes --removenewestdupes
 rpm --rebuilddb
 
 # Then nuke root crontab, removing cPanel crons
