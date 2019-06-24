@@ -5,7 +5,7 @@
 # Last updated 6/23/2019
 
 # Some pregame notifications
-curl https://raw.githubusercontent.com/killcpanel/downcp/master/logo
+curl https://raw.githubusercontent.com/killcpanel/downcp/master/files/logo
 echo "Obtaining 24th chromosome..."
 sleep 10
 
@@ -86,7 +86,7 @@ systemctl restart mysql
 
 # Replace ~/.bashrc, ~/.bash_profile, /etc/bashrc and /etc/profile
 echo "Replacing bashrcs and profiles..."
-wget https://raw.githubusercontent.com/killcpanel/downcp/master/etcbashrc -O /etc/bashrc
-wget https://raw.githubusercontent.com/killcpanel/downcp/master/etcprofile -O /etc/profile
-wget https://raw.githubusercontent.com/killcpanel/downcp/master/bashrc -O ~/.bashrc
-wget https://raw.githubusercontent.com/killcpanel/downcp/master/bash_profile -O ~/.bash_profile
+wget https://raw.githubusercontent.com/killcpanel/downcp/master/files/etcbashrc -O /etc/bashrc
+wget https://raw.githubusercontent.com/killcpanel/downcp/master/files/etcprofile -O /etc/profile
+wget https://raw.githubusercontent.com/killcpanel/downcp/master/files/bashrc -O ~/.bashrc
+wget https://raw.githubusercontent.com/killcpanel/downcp/master/files/bash_profile -O ~/.bash_profile
