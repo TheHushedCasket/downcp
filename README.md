@@ -15,6 +15,9 @@ This script does a variety of things, starting by disabling the cPanel service. 
 
 This script should NOT delete anything non-cPanel. Any databases or site files you have should stay fully intact. Also, this does remove Apache from the server but not MySQL.
 
+# BASHRC/PROFILE
+Part of this scripts operation involves replacing all ~/.bashrc, ~/.bash_profile files as well as /etc/bashrc and /etc/profile. Those files are pulled from this repo are were copied from a fresh CentOS 7 install. Please note it may be necessary to modify those files after running this script to match your specific needs.
+
 # HOW TO RUN IT
 ```wget https://raw.githubusercontent.com/killcpanel/downcp/master/nuke.sh && chmod +x nuke.sh && sh nuke.sh```
 
