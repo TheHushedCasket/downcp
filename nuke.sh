@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # downcp - The script to uninstall cPanel
-# Version ?.?
+# Version 1.0
 # Last updated 6/23/2019
 
 # First disable services and remove packages
