@@ -39,6 +39,7 @@ This script should NOT delete anything non-cPanel. Any databases or site files y
 Part of this scripts operation involves replacing all ~/.bashrc, ~/.bash_profile files as well as /etc/bashrc and /etc/profile. Those files are pulled from this repo are were copied from a fresh CentOS 7 install. Please note it may be necessary to modify those files after running this script to match your specific needs.
 
 # HOW TO RUN IT
+MUST BE RUN AS ROOT!
 ```wget https://raw.githubusercontent.com/killcpanel/downcp/master/nuke.sh && chmod +x nuke.sh && sh nuke.sh```
 
 This can take quite some time to run, probably best to start in a screen.
