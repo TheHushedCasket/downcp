@@ -41,6 +41,7 @@ Part of this scripts operation involves replacing all ~/.bashrc, ~/.bash_profile
 
 # HOW TO RUN IT
 MUST BE RUN AS ROOT!
+
 ```wget https://raw.githubusercontent.com/killcpanel/downcp/master/nuke.sh && chmod +x nuke.sh && sh nuke.sh```
 
 This can take quite some time to run, probably best to start in a screen.
