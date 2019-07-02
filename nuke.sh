@@ -58,18 +58,12 @@ rm -f /etc/systemd/system/cp*
 rm -f /etc/systemd/system/queueprocd.service
 rm -f /etc/systemd/system/tailwatchd.service
 rm -f /etc/systemd/system/spamd.service
-rm -f /etc/systemd/system/cpanalyticsd.service
-rm -f /etc/systemd/system/cpanel_dovecot_solr.service
-rm -f /etc/systemd/system/cphulkd.service
 
 # Also remove them from the different targets
 rm -f /etc/systemd/system/*/cp*
 rm -f /etc/systemd/system/*/queueprocd.service
 rm -f /etc/systemd/system/*/tailwatchd.service
 rm -f /etc/systemd/system/*/spamd.service
-rm -f /etc/systemd/system/cpanalyticsd.service
-rm -f /etc/systemd/system/cpanel_dovecot_solr.service
-rm -f /etc/systemd/system/cphulkd.service
 
 # Reload systemd daemons and clear failed daemons
 echo "Reloading systemd..."
