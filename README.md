@@ -27,6 +27,7 @@ The unofficial cPanel uninstall script
   The easy way to nuke cPanel...
   <br>
 </p>
+
 # PURPOSE
 This script is designed to remove cPanel from a server. cPanel was not designed to be uninstalled and there is really no good reason to ever do this, you're better off re-OSing. This is more of an experiment. If you use this on anything important, you're an idiot.
 
