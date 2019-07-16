@@ -13,6 +13,7 @@ sleep 10
 echo "Stopping cPanel..."
 systemctl stop cpanel solr cphulkd cpanel_dovecot_solr cpanalyticsd spamd tailwatchd queueprocd
 systemctl disable cpanel solr cphulkd cpanel_dovecot_solr cpanalyticsd spamd tailwatchd queueprocd
+systemctl unmask cpanel solr cphulkd cpanel_dovecot_solr cpanalyticsd spam tailwatchd queueprocd
 
 # Removing cPanel packages
 echo "Removing cPanel packages..."
@@ -46,7 +47,9 @@ userdel -r cpanelanalytics
 userdel -r solr
 
 # Find all files/folders relating to cPanel and nuke 'em
-echo "Nuking cPanel files...";
+echo "Nuking cPanel files..."
+chattr -i /var/cpanel/analytics/system_id
+setfacl -m u:root:rw /var/cpanel/analytics/system_id
 chattr -a /usr/local/cpanel/logs/*
 cd /
 find . -type d -name "*cpanel*" -exec rm -rf {} +
